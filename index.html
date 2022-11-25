@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Ref</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+      <div class="successMessage">
+        <img src="images/cong.png">
+        <h2>Thank you for contacting us<br> You will get a reply within 48 hours</h2>
+      </div>
+        <h1 class="hidden">Mail Reference for API Processing</h1>
+      <!-- <hr class="separator"> -->
+
+
+        <div class="textBox">
+          <h2>GET IN TOUCH</h2>
+          <p>
+          ehfheeicbhecbeu 
+          </p>
+        </div>
+        
+        <div class="contactBox">
+          <div class="section2">
+            <div>
+              <h2 class="mail-header">FILL OUT THIS FORM</h2>
+              <p class="errorMessage">Please, make sure you fill out all sections.</p>
+              <form action="includes/mail/send.php" method="POST" id="mail-form">
+                <label for="firstname">First Name</label>
+                <input ref="fname" type="text" id="firstname" name="firstname" required="required">
+
+                <label for="lastname">Last Name</label>
+                <input ref="lname" type="text" id="lastname" name="lastname" required>
+
+                <label for="firstname">Email</label>
+                <input ref="email" type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea ref="message" name="message" id="message" cols="30" rows="10"></textarea>
+
+                <label for="phone">Your Phone # <i>(optional)</i></label>
+                <input ref="phone" type="tel" value="tel" name="phone">
+                
+                <div class="wrapper">
+                    <input @click.prevent="processMail" type="submit" class="submit" value="Submit">
+                    <i class="fas fa-paper-plane"></i>
+                </div>                              
+            </form>
+            </div>
+
+          <div class="infoBox">
+            <h2>CALL ME</h2>
+            <p>
+              +1 514-383-9393 <br>
+              +1 519-929-9872
+            </p>
+            <h2>EMAIL Me</h2>
+            <p>
+              aymanproject@gmail.com
+            </p>
+            <h2>BUSINESS HOURS</h2>
+            <p>
+              Mon - Fri: 10am ~ 10pm <br>
+              Sat - Sun: 10am ~ 5pm
+            </p>
+          </div>
+          </div>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>
