@@ -1,0 +1,33 @@
+// defualts
+.hidden { 
+  display: none; 
+}
+
+$main-font-face: 'Roboto', sans-serif;
+$main-font-weight: 500;
+$para-font-weight: 400;
+$content-padding: 50px 200px;
+$bottom-space: 15px;
+$h2-font: 30px;
+$para-font: 15px;
+
+// bg and font
+/* Contact Part */
+$up-bg-color: #ff8a80;
+$main-font-color: white;
+
+/* Text Part */
+$down-bg-color: #ffbcaf;
+$text-part-color: gray;
+
+/* Info Part */
+$info-bg-color: #fcd7d0;
+$info-font-color: black;
+
+
+// quick reset
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
